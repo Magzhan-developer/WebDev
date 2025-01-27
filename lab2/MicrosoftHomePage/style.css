@@ -1,0 +1,204 @@
+*{
+    font-family: 'Roboto Light',sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 10vh;
+}
+
+.microsoft-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.withArrowBlock > img{
+    width: 15px;
+    height: 15px;
+}
+
+.withExitIconBlock > img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+
+.withLupaBlock > img {
+    width: 20px;
+    height: 20px;
+}
+.withPurchaseCorzinaBlock > img {
+    width: 20px;
+    height: 20px;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.withMC_iconBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.withMC_iconBlock > span {
+    font-weight: bold;
+    color:gray;
+    font-size: 19px;
+}
+
+.search-card-signinBlock{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    gap: 30px;
+}
+.basicFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.pay-your-way{
+    background-color: #405eb6;
+    color:white;
+    padding: 20px 0;
+    font-size: 21px;
+}
+
+.pay-your-way > img{
+    width: 20px;
+    height: 20px;
+    rotate: -90deg;
+}
+
+.customArrow{
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #D6EEEE;
+}
+.customArrow1{
+    rotate: 45deg;
+}
+
+.customArrow2{
+    rotate: -45deg;
+}
+.copilotBlock{
+    background-image: url("assets/images/copilot.webp");
+    background-size: cover;
+    background-position: center;
+    height: 539px;
+    padding: 80px 0 0 80px ;
+    box-sizing: border-box;
+}
+.meet-surface-pro{
+    flex-direction: column;
+    gap: 20px;
+    z-index: 100000;
+    width: 550px;
+    height: auto;
+    border: 1px solid red;
+    background-color: white;
+    padding: 20px 20px 30px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.basicButton{
+    background-color: #405eb6;
+    color: white;
+    padding: 10px 0;
+    max-width: 120px;
+}
+.circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+.circleBlack{
+    background-color: #111111;
+}
+
+.changeBarIcons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.simpleIconStyle{
+    width: 40px;
+    height: 40px;
+}
+
+.withIconsBlock{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.withIconsBlockChild{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.withCardBlock{
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    border-radius: 8px;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.withCardBlockChild > img{
+    width: 350px;
+    height: 270px;
+}
+.withCardBlockChild{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgba(128, 128, 128,0.23);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.withCardBlockChildDesc{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.withCardBlockChildDesc > span{
+    margin-bottom: 20px;
+}
