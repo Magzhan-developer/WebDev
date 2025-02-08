@@ -22,7 +22,8 @@ const onClickAddButton = (e) => {
                 data = JSON.parse(localStorage.getItem('data')).push(obj)
                 localStorage.setItem('data',JSON.stringify(data))
             }else{
-                localStorage.setItem('data', JSON.stringify([].push(JSON.stringify(obj))))
+                const settedData= [obj]
+                localStorage.setItem('data', JSON.stringify(settedData))
             }
     }else if(!document.getElementById('inputParent').children[1] && inputValue.length > 0){
         const obj = {
