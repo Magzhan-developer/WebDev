@@ -1,0 +1,12 @@
+<div style="margin: 0 auto;display: flex;gap: 20px;flex-wrap: wrap">
+    <ng-container *ngFor="let product of products">
+        <app-product
+          [productName]="product.productName"
+          [productDescription]="product.productDescription"
+          [productRating]="product.productRating"
+          [productImg]="product.productImg"
+        ></app-product>
+    </ng-container>
+  <img ngSrc="../../assets/images/Logitech%20G%20PRO%20X-Blue.webp" alt="фотка" >
+
+</div>

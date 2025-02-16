@@ -1,0 +1,15 @@
+.product-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  border:1px solid black;
+  width: 200px;
+  height: 300px;
+}
+
+.withActions{
+  display: flex;
+  justify-content: space-between;
+  margin:0 5px;
+}
