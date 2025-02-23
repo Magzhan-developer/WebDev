@@ -12,4 +12,12 @@ export class ProductComponent {
     @Input() productDescription = ''
     @Input() productRating = ''
     @Input() productImg = ''
+    @Input() linkToTheProduct = ''
+  onClickProduct(){
+      window.open(this.linkToTheProduct,"_blank")
+  }
+
+  onShareInTelegram(){
+      window.open(`https://t.me/share/url?url=${this.linkToTheProduct}`,'_blank')
+  }
 }

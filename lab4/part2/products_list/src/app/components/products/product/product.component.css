@@ -10,6 +10,18 @@
 
 .withActions{
   display: flex;
-  justify-content: space-between;
-  margin:0 5px;
+  margin:0 20px 0 10px;
+  align-self: flex-end;
+  gap: 10px;
+}
+
+.productImg{
+  margin-top: 10px;
+  max-width: 100%;
+  max-height:40%;
+  object-fit: contain;
+}
+.product-desc{
+  width:100%;
+  padding: 0 10px;
 }
