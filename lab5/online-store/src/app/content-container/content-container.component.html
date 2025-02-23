@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="selectBlock">
+    <span>Выберите категорию</span>
+    <select [(ngModel)]="selectedCategory" (change)="logSelectValue()">
+      <ng-container *ngFor="let category of categories">
+        <option [value]="category.categoryCode">{{category.categoryRuName}}</option>
+      </ng-container>
+    </select>
+  </div>
+
+  <div style="margin: 0 auto;display: flex;gap: 20px;flex-wrap: wrap;width: 60%">
+    <ng-container *ngFor="let product of data[selectedCategory]">
+      <app-product-item
+        [productName]="product.productName"
+        [productDescription]="product.productDescription"
+        [productRating]="product.productRating"
+        [productImg]="product.productImg"
+        [linkToTheProduct]="product.linkToTheProduct"
+      ></app-product-item>
+    </ng-container>
+  </div>
+
+</div>

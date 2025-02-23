@@ -1,0 +1,17 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectBlock{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.selectBlock > select{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e1e1f8;
+}

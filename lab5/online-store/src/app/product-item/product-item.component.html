@@ -1,0 +1,11 @@
+<div class="product-card">
+  <img (click)="onClickProduct()" class="productImg" src="{{productImg}}" alt="{{productName}}">
+  <div class="product-desc">
+    <p>{{productName}}</p>
+    <p>{{productDescription}}</p>
+    <div class="withActions">
+      <button (click)="onShareInTelegram()"  class="btn">Share</button>
+      <p>Rating:{{productRating}}</p>
+    </div>
+  </div>
+</div>
