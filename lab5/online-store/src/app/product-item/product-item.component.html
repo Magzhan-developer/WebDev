@@ -7,5 +7,14 @@
       <button (click)="onShareInTelegram()"  class="btn">Share</button>
       <p>Rating:{{productRating}}</p>
     </div>
+    <div class="delete-and-like-container">
+      <img (click)="onRemoveProduct()" src="../assets/icons/delete.png" style="width:20px;height: 20px" alt="">
+      <ng-container *ngIf="status;else unliked">
+        <img (click)="changeLikeButton()" src="/assets/icons/heart_red.png" style="width:20px;height: 20px" alt="">
+      </ng-container>
+      <ng-template #unliked>
+        <img src="/assets/icons/heart_transparent.png" (click)="changeLikeButton()" style="width:20px;height: 20px" alt="">
+      </ng-template>
+    </div>
   </div>
 </div>

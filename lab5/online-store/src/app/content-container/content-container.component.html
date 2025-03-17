@@ -1,14 +1,14 @@
 <div class="main-container">
   <div class="selectBlock">
     <span>Выберите категорию</span>
-    <select [(ngModel)]="selectedCategory" (change)="logSelectValue()">
+    <select [(ngModel)]="selectedCategory">
       <ng-container *ngFor="let category of categories">
         <option [value]="category.categoryCode">{{category.categoryRuName}}</option>
       </ng-container>
     </select>
   </div>
 
-  <div style="margin: 0 auto;display: flex;gap: 20px;flex-wrap: wrap;width: 60%">
+  <div style="margin: 20px 0 0 100px;display: flex;gap: 20px;flex-wrap: wrap;width: 60%">
     <ng-container *ngFor="let product of data[selectedCategory]">
       <app-product-item
         [productName]="product.productName"
@@ -16,8 +16,17 @@
         [productRating]="product.productRating"
         [productImg]="product.productImg"
         [linkToTheProduct]="product.linkToTheProduct"
+        (likeToggled)="updateLikes($event)"
+        [productId]="product.productId"
+        (removeProduct)="productRemover($event)"
       ></app-product-item>
     </ng-container>
-  </div>
 
+  </div>
+  <div class="totalLikes">
+      <span class="greatFontStyle">Total Number of Like is:</span>
+      <div>
+        <span class="font-30">{{totalLikesNumber}}</span>
+      </div>
+  </div>
 </div>

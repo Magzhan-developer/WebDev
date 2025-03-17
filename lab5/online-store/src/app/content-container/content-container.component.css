@@ -1,5 +1,25 @@
+.main-container{
+  display: flex;
+  align-items: flex-start;
+  margin: 100px;
+}
+
 .selectBlock{
   display: flex;
   gap: 20px;
   align-items: center;
+}
+.totalLikes{
+  margin-top: 20px;
+  display: flex;
+  width: 390px;
+  gap: 5px;
+}
+
+.greatFontStyle{
+  font-size: 30px;
+  font-family: "Roboto Light",sans-serif;
+}
+.font-30{
+  font-size: 30px;
 }

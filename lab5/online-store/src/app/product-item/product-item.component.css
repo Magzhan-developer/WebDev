@@ -25,3 +25,16 @@
   width:100%;
   padding: 0 10px;
 }
+
+.product-desc > p {
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.delete-and-like-container{
+  display: flex;
+  width: 92%;
+  justify-content: flex-end;
+  gap: 5px;
+}

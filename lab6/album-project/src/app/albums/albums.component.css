@@ -1,0 +1,11 @@
+.main-container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.albums-container{
+  max-width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

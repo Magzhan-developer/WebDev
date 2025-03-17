@@ -1,1 +1,15 @@
-<p>album-detail works!</p>
+<div class="main-album-detailed">
+  <div class="album-card">
+    <div class="album-card-container">
+      <span>User Id:{{album.userId}}</span>
+      <span>Album Id:{{album.id}}</span>
+      <input (input)="onInputValueChange($event)"  [disabled]="isInputDisabled" [(ngModel)]="albumTitle" type="text" name="" id="">
+    </div>
+      <div class="actionBtns">
+        <button (click)="goToPhoto()" style="color: #111111">Go to the Photo of the album</button>
+        <button (click)="onSave($event)" *ngIf="isSaveButtonShow" style="color: #111111">Save</button>
+        <button (click)="onReset()" *ngIf="isSaveButtonShow" style="color: #111111">Reset</button>
+      </div>
+  </div>
+</div>
+
