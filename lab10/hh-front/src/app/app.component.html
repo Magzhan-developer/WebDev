@@ -1,0 +1,8 @@
+<router-outlet></router-outlet>
+<div style="display: flex;justify-content: center;align-items: center;height: 100vh;gap: 20px">
+  <div (click)="onClickCard(company.id)" *ngFor="let company of companies" style="border: 1px solid black;display: flex;flex-direction: column;gap: 10px;padding: 10px 20px">
+    <h3>{{company.name}}</h3>
+    <span>{{company.description}}</span>
+  </div>
+
+</div>
